@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "strict": true,
+    "skipLibCheck": true,
+
+    "paths": {
+      "@example/lib2": ["./packages/lib2/src"],
+      "@example/lib2/*": ["./packages/lib2/src/*"],
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

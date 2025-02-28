@@ -1,0 +1,23 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "./src",
+    "tsBuildInfoFile": "./dist/.tsbuildinfo",
+    "outDir": "./dist",
+    "baseUrl": "./",
+
+    "paths": {
+        "@example/lib2": ["../lib2/dist"],
+        "@example/lib2/*": ["../lib2/dist/*"],
+    },
+  },
+  "references": [
+    {
+      "path": "../lib2/tsconfig.build.json"
+    }
+  ],
+  "include": [
+    "src"
+  ]
+}
